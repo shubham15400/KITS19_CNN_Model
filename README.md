@@ -6,6 +6,15 @@ This project implements a 3D Convolutional Neural Network (CNN) for binary segme
 
 The model processes volumetric data with dimensions `(Depth, Height, Width, Channels)` and outputs a binary segmentation map with the same spatial dimensions as the input. The architecture uses downsampling for feature extraction and upsampling for reconstructing the spatial dimensions.
 
+## Dataset
+This project uses the **KITS19 Dataset**, a publicly available dataset for kidney tumor segmentation challenges. It includes:
+- 3D volumetric CT scans of the abdomen.
+- Ground truth segmentation masks for kidney and tumor regions.
+
+The dataset is preprocessed to resize scans and masks to a consistent shape (e.g., 128x128x128).
+
+To learn more about the KITS19 dataset, visit the [kits19](https://github.com/neheller/kits19).
+
 ## Requirements
 
 Install the necessary dependencies using the following:
